@@ -829,11 +829,6 @@ ul.tabs li a:hover {
 	border-bottom: 1px solid #0b8539;
 	font-size: 14px;
 }
-
-
-
-
-
 @media (max-width: 992px){
 	.top-nav {
 	    float: none;
@@ -973,7 +968,6 @@ ul.tabs li a:hover {
 	    width: 33.3%;
 	}
 }
-
 @media (max-width: 650px){
 	ul.tabs{
 		width: 100%;
@@ -1004,14 +998,12 @@ ul.tabs li a:hover {
 	    }
 	}
 }
-
 @media (max-width: 600px){
 	.blockquote-item-wrap:before,
 	.blockquote-item-wrap:after{
 		display: none;
 	}
 }
-
 @media (max-width: 550px){
 	.news-item{
 		width: 100%;
