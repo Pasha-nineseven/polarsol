@@ -151,14 +151,9 @@ table{
 	table-layout: fixed;
   	height: 100%;
   	width: 100%;
-
-	-webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    @include transition(transform 0.5s ease);
+    transition: (transform 0.5s ease);
     &.active{
-		-webkit-transform: translate3d(-320px, 0, 0);
-		-moz-transform: translate3d(-320px, 0, 0);
 		transform: translate3d(-320px, 0, 0);
     }
 }
@@ -217,8 +212,8 @@ table{
 	line-height: 38px;
 	border: 1px solid #b5dac3;
 	padding: 0 20px 0 19px;
-	@include border-radius(20px);
-	@include transition(all 0.3s ease);
+	border-radius: 20px;
+	transition: all 0.3s ease;
 	i{
 		display: inline-block;
 		vertical-align: middle;
@@ -230,7 +225,7 @@ table{
 		width: 12px;
 		height: 14px;
 		display: block;
-		@include transition(fill 0.3s ease);
+		transition: fill 0.3s ease;
 	}
 	&:hover{
 		background: #0b8539;
@@ -295,6 +290,7 @@ table{
     background-color: #0b8539;
     @include transition(all 0.2s ease);
     @include border-radius(5px);
+    border-radius: 5px;
     &:before,
     &:after{
 		position: absolute;
@@ -1077,3 +1073,4 @@ ul.tabs li a:hover {
 	    width: 50%;
 	}
 }
+
