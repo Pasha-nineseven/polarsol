@@ -1,0 +1,55 @@
+* {
+  @include box-sizing(border-box);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+
+html, body{
+    height: 100%;
+}
+
+*:focus {
+	outline: none;
+	-moz-outline-style: none;
+}
+
+:-moz-any-link:focus {
+	outline: 1px dotted invert;
+}
+
+:-moz-any-link:focus {
+	outline: none;
+}
+
+textarea,input {
+	@include box-shadow (none);
+	-webkit-appearance: none;
+	appearance: none;
+
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+a{
+	color: #1f2b2a;
+	@include transition (color 0.3s linear);
+	text-decoration: none;
+	&:hover{
+		color: #0b8539;
+	}
+}
+
+body {
+	background: $default-bg-color;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1;
+	font-size: $default-size-font;
+	font-family: $default-font;
+	color: $base-color;
+	min-width: 320px;
+}
